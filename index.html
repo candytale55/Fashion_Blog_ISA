@@ -2,38 +2,115 @@
 <html>
   <head>
     <title>Everyday with Isa</title>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
   </head>
-  
-  
+
+
   <body>
-    <a href="#contact"><img src="https://s3.amazonaws.com/codecademy-content/courses/learn-html/elements-and-structure/profile.jpg" alt=""></a>
-    <h3>by Isabelle Rodriguez | 1 day ago</h3>
-    
-    <h1>An Insider's Guide to NYFW</h1>
-    <img src="https://s3.amazonaws.com/codecademy-content/courses/learn-html/elements-and-structure/image-three.jpeg" alt="">
-    <p><a href="https://en.wikipedia.org/wiki/New_York_Fashion_Week" target="_blank">NYFW</a> can be both amazingly fun & incredibly overwhelming, especially if you've never been. Luckily, I'm here to give you an insider's guide and make your first show a pleasurable experience. By taking my tips and tricks, and following your gut, you'll have an unforgettable experience!</p>
-    
-    <h2>Getting Tickets & Picking the Shows</h2>
-    <img src="https://s3.amazonaws.com/codecademy-content/courses/learn-html/elements-and-structure/image-one.jpeg" alt="">
-    <p>If you're lucky or connected you can get an invite, sans the price tag. But I wasn't so lucky or connected my first 2 years so I'm here to help you out. First, plan out which shows are most important to you and make a schedule and this is a biggie: SET A BUDGET. If you're worrying about blowing your cash the whole time you won't have fun. Then check out prices, days, and times and prioritize the designers you want to see most. Lastly, purchase your tickets and get excited!</p>
-    
-    <h2>Dressing for the Shows</h2>
-    <img src="https://s3.amazonaws.com/codecademy-content/courses/learn-html/elements-and-structure/image-two.jpeg" alt="">
-    <p>Always be true to your own sense of style, if you don't you'll be uncomfortable the whole time and it will show. Remember, NYFW is about expressing yourself and taking in what the designers have chosen to express through their new lines. Also it's important to wear shoes you'll be comfortable in all day. Obviously you want to look good, but you'll be on your feet all day long, so be prepared.</p>
-    
-    <h4>Related Content</h4>
-    <ul>
-      <li>How To Style Boyfriend Jeans</li>
-      <li>When Print Is Too Much</li>
-      <li>The Overalls Trend</li>
-      <li>Fall's It Color: Blush</li>
-    </ul>
-    
-    <div id="contact">
-      <p><strong>email:</strong> isa@fashionblog.com | <strong>phone:</strong> 917-555-1098 | <strong>address:</strong> 371 284th St, New York, NY, 10001</p>
+
+  <header>
+    <div id="header-logo">Isabelle Rodriguez</div>
+    <nav>
+      <ul>
+        <li><a href="#header-logo">Home</a></li>
+        <li><a href="#trending">Trending</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+
+  </header>
+
+    <aside class="left">
+      <section id="profile" class="left">
+        <h3>Isabelle Rodriguez</h3>
+
+        <a href="#contact">
+          <img id="profile-img"
+                src="https://s3.amazonaws.com/codecademy-content/courses/learn-html/elements-and-structure/profile.jpg"
+                alt="Isabelle Profile Picture">
+        </a>
+
+        <div class="social-media-icons">
+          <a href="#"><img src="./media-icons/facebook-icon.svg" alt="Facebook Icon"></a>
+          <a href="#"><img src="./media-icons/instagram-icon.svg" alt="Instagram Icon"></a>
+          <a href="#"><img src="./media-icons/pinterest-icon.svg" alt="Pintrest Icon"></a>
+          <a href="#"><img src="./media-icons/twitter-icon.svg" alt="Twitter Icon"></a>
+        </div>
+
+      </section>
+
+      <section id="trending">
+        <h4 class="subtitle">Related Content</h4>
+        <ul>
+          <li><a href="#">How To Style Boyfriend Jeans</a></li>
+          <li><a href="#">When Print Is Too Much</a></li>
+          <li><a href="#">The Overalls Trend</a></li>
+          <li><a href="#">Fall's It Color: Blush</a></li>
+        </ul>
+      </section>
+
+    </aside>
+
+
+    <main>
+      <section id="insider-sec">
+          <div class="title-block">
+            <h1 class="title">An Insider's Guide to NYFW</h1>
+            <h3>by Isabelle Rodriguez | 1 day ago<h3>
+          </div>
+          <div>
+          <img src="https://s3.amazonaws.com/codecademy-content/courses/learn-html/elements-and-structure/image-three.jpeg" alt="">
+          <p><a href="https://en.wikipedia.org/wiki/New_York_Fashion_Week" target="_blank">NYFW</a> can be both amazingly fun & incredibly overwhelming, especially if you've never been. Luckily, I'm here to give you an insider's guide and make your first show a pleasurable experience. By taking my tips and tricks, and following your gut, you'll have an unforgettable experience!</p>
+        </div>
+      </section>
+
+      <section id="tickets-sec">
+        <h2 class="subtitle">Getting Tickets & Picking the Shows</h2>
+        <div>
+          <img src="https://s3.amazonaws.com/codecademy-content/courses/learn-html/elements-and-structure/image-one.jpeg" alt="">
+          <p>If you're lucky or connected you can get an invite, sans the price tag. But I wasn't so lucky or connected my first 2 years so I'm here to help you out. First, plan out which shows are most important to you and make a schedule and this is a biggie: SET A BUDGET. If you're worrying about blowing your cash the whole time you won't have fun. Then check out prices, days, and times and prioritize the designers you want to see most. Lastly, purchase your tickets and get excited!</p>
+        </div>
+      </section>
+
+      <section id="dressing-sec">
+        <h2 class="subtitle">Dressing for the Shows</h2>
+        <div>
+          <img src="https://s3.amazonaws.com/codecademy-content/courses/learn-html/elements-and-structure/image-two.jpeg" alt="">
+          <p>Always be true to your own sense of style, if you don't you'll be uncomfortable the whole time and it will show. Remember, NYFW is about expressing yourself and taking in what the designers have chosen to express through their new lines. Also it's important to wear shoes you'll be comfortable in all day. Obviously you want to look good, but you'll be on your feet all day long, so be prepared.</p>
+        </div>
+      </section>
+    </main>
+
+
+
+
+<footer>
+  <div id="contact">
+    <h4>Contact</h4>
+    <div id="contact-info">
+      <span><strong>email:</strong> isa@fashionblog.com</span>
+      <span>&nbsp;&nbsp;&nbsp;|<strong>&nbsp;&nbsp;&nbsp;phone:</strong> 917-555-1098</span>
+      <span>&nbsp;&nbsp;&nbsp;|<strong>&nbsp;&nbsp;&nbsp;address:</strong> 371 284th St, New York, NY, 10001</span>
     </div>
-    
-  </body>
+  </div>
+
+  <div id="footer-social-media-icons">
+    <div class="container">
+      <a href="#"><img src="./media-icons/facebook-icon.svg" alt="Facebook Icon"></a>
+      <a href="#"><img src="./media-icons/instagram-icon.svg" alt="Instagram Icon"></a>
+      <a href="#"><img src="./media-icons/pinterest-icon.svg" alt="Pintrest Icon"></a>
+      <a href="#"><img src="./media-icons/twitter-icon.svg" alt="Twitter Icon"></a>
+    </div>
+  </div>
+</footer>
+
+
+</body>
 
 
 

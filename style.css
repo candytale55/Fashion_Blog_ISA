@@ -1,0 +1,226 @@
+
+:root{
+  font-size: 10px;
+  --header-color: transparent;
+  --footer-color : #CAE1FF;
+  --links-color: #007BAE;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.5;
+  font-size: 1.8rem;
+  text-align: justify;
+  flex-shrink: 2;
+}
+
+img {
+  flex-shrink: 1;
+}
+
+
+/*  HEADER AND NAV BAR */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--header-color);
+  margin: 0 2.5em;
+}
+
+#header-logo {
+  font-family: 'Kaushan Script', cursive;
+  font-size: 4rem;
+}
+
+nav {
+  text-transform: uppercase;
+  font-style: oblique;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+}
+
+nav a:hover {
+  font-weight: bolder;
+  color: purple;
+}
+
+nav ul {
+  display: flex;
+}
+nav li {
+  padding: .5rem 4rem;
+}
+
+header .social-media-icons{
+  margin: 0 2.5rem;
+  padding: .5rem 2.3rem;
+}
+
+.social-media-icons img {
+  height: 3rem;
+}
+
+
+/* PROFILE SECTION */
+
+aside  {
+  position:absolute;
+  display: flex;
+  flex-direction: column;
+  margin-top: 4em;
+  margin-left: 2.5em;
+  margin-right: 0 2.5em;
+}
+
+#profile{
+  display: flex;
+  flex-direction: column;
+}
+
+#profile h3, #profile p {
+  font-size: 1.5rem;
+  margin-left: 0.8em;
+}
+
+#profile-img{
+  border-radius: 6%;
+  max-height: 150px;
+  margin: 0.5em;
+}
+
+
+/*   TRENDING SECTION  */
+
+#trending{
+  margin-top: 3.5rem;
+}
+
+#trending ul{
+    display: flex;
+    flex-direction: column;
+  }
+
+#trending a {
+  line-height: 2;
+  color: black;
+  text-decoration-style: wavy;
+  text-decoration-color: var(--links-color);
+}
+
+#trending a:hover {
+  font-weight: bolder;
+  color: purple;
+}
+
+#trending .subtitle{
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+
+
+
+/*  MAIN  */
+
+main{
+  margin-top: 4em;
+  margin-bottom: 3em;
+  margin-left: 30%;
+  margin-right: 15%;
+}
+
+section{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2em;
+}
+
+section div img {
+  float: left;
+  margin-right: 1em;
+  margin-bottom: 1em;
+}
+
+
+
+.title{
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 3.2rem;
+}
+.subtitle  {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 2.4rem;
+  margin-bottom: .8em;
+}
+
+.title-block h3{
+  font-size: 1.5rem;
+  margin-bottom: 3em;
+}
+
+
+
+
+/* FOOTER */
+
+footer{
+  margin-top: 3em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  width: 100%;
+  background-color: var(--footer-color);
+}
+
+strong {
+  font-weight: bolder;
+}
+
+#contact{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 3em;
+}
+
+#contact h4{
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 2rem;
+  padding-bottom: 1em;
+  font-style: oblique;
+}
+
+#contact-info span{
+  padding: 0 1rem;
+}
+
+#contact-info strong{
+  padding: 0 1.5rem;
+}
+
+#footer-social-media-icons{
+  text-align: center;
+  padding-bottom: 3em;
+}
+
+#footer-social-media-icons .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+#footer-social-media-icons a {
+  justify-content: space-around;
+}
+
+#footer-social-media-icons img {
+  height: 3.5rem;
+}
